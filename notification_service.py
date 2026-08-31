@@ -1,6 +1,5 @@
 import requests
 
-
 class NotificationService:
     def create_message(self, pull_request):
         return (
