@@ -1,4 +1,3 @@
-import requests
 
 
 class NotificationService:
@@ -10,4 +9,3 @@ class NotificationService:
             f"Pull Request: {pull_request.pr_url}\n"
             f"Action: {pull_request.action}"
         )
-        

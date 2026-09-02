@@ -1,5 +1,6 @@
-from pull_request import PullRequest
 from notification_service import NotificationService
+from pull_request import PullRequest
+
 
 def main():
     pr = PullRequest(
@@ -14,6 +15,7 @@ def main():
     message = notification.create_message(pr)
 
     print(message)
+
 
 if __name__ == "__main__":
     main()

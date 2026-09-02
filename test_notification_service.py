@@ -1,14 +1,9 @@
-from pull_request import PullRequest
 from notification_service import NotificationService
+from pull_request import PullRequest
 
 
 def test_pr_creation():
-    pr = PullRequest(
-        "TestRepo",
-        1,
-        "https://github.com/test",
-        "opened"
-    )
+    pr = PullRequest("TestRepo", 1, "https://github.com/test", "opened")
 
     assert pr.repository == "TestRepo"
     assert pr.pr_number == 1
@@ -17,12 +12,7 @@ def test_pr_creation():
 
 
 def test_notification_message():
-    pr = PullRequest(
-        "TestRepo",
-        1,
-        "https://github.com/test",
-        "opened"
-    )
+    pr = PullRequest("TestRepo", 1, "https://github.com/test", "opened")
 
     notification = NotificationService()
 
