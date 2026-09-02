@@ -1,6 +1,7 @@
 from pull_request import PullRequest
 from notification_service import NotificationService
 
+
 def main():
     pr = PullRequest(
         repository="Code_modify",
